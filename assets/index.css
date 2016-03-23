@@ -1,7 +1,9 @@
 .rc-tabs {
-  outline: none;
   box-sizing: border-box;
   position: relative;
+}
+.rc-tabs-tabs-bar {
+  outline: none;
 }
 .rc-tabs-ink-bar {
   z-index: 1;
@@ -102,6 +104,7 @@
   display: block;
 }
 .rc-tabs-nav .rc-tabs-tab > .rc-tabs-tab-inner {
+  -webkit-transition: color 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: color 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   padding: 8px 20px;
   font-weight: 500;
@@ -128,8 +131,10 @@
 .rc-tabs-slide-horizontal-backward-enter.rc-tabs-slide-horizontal-backward-enter-active {
   -webkit-transform: translateX(0) translateZ(0);
           transform: translateX(0) translateZ(0);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+  transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1), -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .rc-tabs-slide-horizontal-backward-leave {
   overflow: hidden;
@@ -144,8 +149,10 @@
 .rc-tabs-slide-horizontal-backward-leave.rc-tabs-slide-horizontal-backward-leave-active {
   -webkit-transform: translateX(100%) translateZ(0);
           transform: translateX(100%) translateZ(0);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+  transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1), -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .rc-tabs-slide-horizontal-forward-enter {
   -webkit-transform: translateX(100%);
@@ -154,8 +161,10 @@
 .rc-tabs-slide-horizontal-forward-enter.rc-tabs-slide-horizontal-forward-enter-active {
   -webkit-transform: translateX(0) translateZ(0);
           transform: translateX(0) translateZ(0);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+  transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1), -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .rc-tabs-slide-horizontal-forward-leave {
   overflow: hidden;
@@ -170,8 +179,10 @@
 .rc-tabs-slide-horizontal-forward-leave.rc-tabs-slide-horizontal-forward-leave-active {
   -webkit-transform: translateX(-100%) translateZ(0);
           transform: translateX(-100%) translateZ(0);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+  transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1), -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .rc-tabs-slide-vertical-backward-enter {
   -webkit-transform: translateY(-100%);
@@ -180,8 +191,10 @@
 .rc-tabs-slide-vertical-backward-enter.rc-tabs-slide-vertical-backward-enter-active {
   -webkit-transform: translateY(0) translateZ(0);
           transform: translateY(0) translateZ(0);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+  transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1), -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .rc-tabs-slide-vertical-backward-leave {
   overflow: hidden;
@@ -196,8 +209,10 @@
 .rc-tabs-slide-vertical-backward-leave.rc-tabs-slide-vertical-backward-leave-active {
   -webkit-transform: translateY(100%) translateZ(0);
           transform: translateY(100%) translateZ(0);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+  transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1), -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .rc-tabs-slide-vertical-forward-enter {
   -webkit-transform: translateY(100%);
@@ -206,8 +221,10 @@
 .rc-tabs-slide-vertical-forward-enter.rc-tabs-slide-vertical-forward-enter-active {
   -webkit-transform: translateY(0) translateZ(0);
           transform: translateY(0) translateZ(0);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+  transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1), -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .rc-tabs-slide-vertical-forward-leave {
   overflow: hidden;
@@ -222,8 +239,10 @@
 .rc-tabs-slide-vertical-forward-leave.rc-tabs-slide-vertical-forward-leave-active {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+  transition: transform 0.3s cubic-bezier(0.35, 0, 0.25, 1), -webkit-transform 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .rc-tabs-left {
   border-right: 2px solid #f3f3f3;
@@ -247,6 +266,7 @@
   height: 99999px;
 }
 .rc-tabs-left .rc-tabs-nav {
+  -webkit-transition: top 0.5s cubic-bezier(0.35, 0, 0.25, 1);
   transition: top 0.5s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .rc-tabs-left .rc-tabs-tab-prev,
@@ -285,9 +305,11 @@
   right: 0;
 }
 .rc-tabs-left .rc-tabs-ink-bar-transition-forward {
+  -webkit-transition: bottom 0.3s cubic-bezier(0.35, 0, 0.25, 1), top 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s;
   transition: bottom 0.3s cubic-bezier(0.35, 0, 0.25, 1), top 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s;
 }
 .rc-tabs-left .rc-tabs-ink-bar-transition-backward {
+  -webkit-transition: bottom 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s, top 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: bottom 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s, top 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .rc-tabs-left .rc-tabs-nav .rc-tabs-tab {
@@ -312,6 +334,7 @@
   height: 99999px;
 }
 .rc-tabs-right .rc-tabs-nav {
+  -webkit-transition: top 0.5s cubic-bezier(0.35, 0, 0.25, 1);
   transition: top 0.5s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .rc-tabs-right .rc-tabs-tab-prev,
@@ -353,9 +376,11 @@
   left: 0;
 }
 .rc-tabs-right .rc-tabs-ink-bar-transition-forward {
+  -webkit-transition: bottom 0.3s cubic-bezier(0.35, 0, 0.25, 1), top 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s;
   transition: bottom 0.3s cubic-bezier(0.35, 0, 0.25, 1), top 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s;
 }
 .rc-tabs-right .rc-tabs-ink-bar-transition-backward {
+  -webkit-transition: bottom 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s, top 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: bottom 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s, top 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .rc-tabs-right .rc-tabs-nav .rc-tabs-tab {
@@ -381,6 +406,7 @@
   width: 100%;
 }
 .rc-tabs-bottom .rc-tabs-nav {
+  -webkit-transition: left 0.5s cubic-bezier(0.35, 0, 0.25, 1);
   transition: left 0.5s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .rc-tabs-bottom .rc-tabs-tab-next {
@@ -409,9 +435,11 @@
   left: 0;
 }
 .rc-tabs-bottom .rc-tabs-ink-bar-transition-forward {
+  -webkit-transition: right 0.3s cubic-bezier(0.35, 0, 0.25, 1), left 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s;
   transition: right 0.3s cubic-bezier(0.35, 0, 0.25, 1), left 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s;
 }
 .rc-tabs-bottom .rc-tabs-ink-bar-transition-backward {
+  -webkit-transition: right 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s, left 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: right 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s, left 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .rc-tabs-bottom .rc-tabs-nav .rc-tabs-tab {
@@ -439,6 +467,7 @@
   width: 100%;
 }
 .rc-tabs-top .rc-tabs-nav {
+  -webkit-transition: left 0.5s cubic-bezier(0.35, 0, 0.25, 1);
   transition: left 0.5s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .rc-tabs-top .rc-tabs-tab-next {
@@ -467,9 +496,11 @@
   left: 0;
 }
 .rc-tabs-top .rc-tabs-ink-bar-transition-forward {
+  -webkit-transition: right 0.3s cubic-bezier(0.35, 0, 0.25, 1), left 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s;
   transition: right 0.3s cubic-bezier(0.35, 0, 0.25, 1), left 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s;
 }
 .rc-tabs-top .rc-tabs-ink-bar-transition-backward {
+  -webkit-transition: right 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s, left 0.3s cubic-bezier(0.35, 0, 0.25, 1);
   transition: right 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s, left 0.3s cubic-bezier(0.35, 0, 0.25, 1);
 }
 .rc-tabs-top .rc-tabs-nav .rc-tabs-tab {
