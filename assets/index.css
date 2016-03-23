@@ -2,7 +2,7 @@
   box-sizing: border-box;
   position: relative;
 }
-.rc-tabs-tabs-bar {
+.rc-tabs-bar {
   outline: none;
 }
 .rc-tabs-ink-bar {
@@ -247,7 +247,7 @@
 .rc-tabs-left {
   border-right: 2px solid #f3f3f3;
 }
-.rc-tabs-left .rc-tabs-tabs-bar {
+.rc-tabs-left .rc-tabs-bar {
   float: left;
   margin-right: 10px;
   border-right: 1px solid #f3f3f3;
@@ -318,7 +318,7 @@
 .rc-tabs-right {
   border-left: 2px solid #f3f3f3;
 }
-.rc-tabs-right .rc-tabs-tabs-bar {
+.rc-tabs-right .rc-tabs-bar {
   float: right;
   margin-left: 10px;
   border-left: 1px solid #f3f3f3;
@@ -389,7 +389,7 @@
 .rc-tabs-bottom {
   border-top: 2px solid #f3f3f3;
 }
-.rc-tabs-bottom .rc-tabs-tabs-bar {
+.rc-tabs-bottom .rc-tabs-bar {
   border-top: 1px solid #f3f3f3;
 }
 .rc-tabs-bottom .rc-tabs-nav-container-scrolling {
@@ -450,7 +450,7 @@
 .rc-tabs-top {
   border-bottom: 2px solid #f3f3f3;
 }
-.rc-tabs-top .rc-tabs-tabs-bar {
+.rc-tabs-top .rc-tabs-bar {
   border-bottom: 1px solid #f3f3f3;
 }
 .rc-tabs-top .rc-tabs-nav-container-scrolling {
